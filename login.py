@@ -15,7 +15,7 @@ class MainWindow(QMainWindow):
         self.ui=Ui_MainWindow()
         self.ui.setupUi(self)
         
-        self.setWindowTitle("My Window")
+        self.setWindowTitle("WIOTELEMED")
 
 
 app = QApplication(sys.argv)
