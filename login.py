@@ -8,6 +8,18 @@ from PyQt6.QtWidgets import QApplication, QMainWindow, QPushButton
 from ui_login import Ui_MainWindow
 #creo la classe mainwindow che eredita le caratteristiche della classe  mainwindow
 #scrivo la classe 
+import mysql.connector
+
+mydb = mysql.connector.connect(
+  host="localhost",
+  user="root",
+  password="telemedicina2123"
+)
+
+print(mydb)
+
+mycursor = mydb.cursor()
+
 class MainWindow(QMainWindow):
       #nel costruttore inserisco  tutto il codice  per gestire la finestra e gli oggetti di caricare dentro
     def __init__(self):
