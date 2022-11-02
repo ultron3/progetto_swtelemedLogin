@@ -21,6 +21,12 @@ print(mydb)
 
 mycursor = mydb.cursor()
 
+mycursor.execute("SELECT * FROM db_pharm.tuser")
+myresult = mycursor.fetchall()
+
+for x in myresult:
+  print(x)
+
 class MainWindow(QMainWindow):
       #nel costruttore inserisco  tutto il codice  per gestire la finestra e gli oggetti di caricare dentro
     def __init__(self):
