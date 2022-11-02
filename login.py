@@ -14,6 +14,7 @@ mydb = mysql.connector.connect(
   host="localhost",
   user="root",
   password="telemedicina2123"
+  
 )
 
 print(mydb)
