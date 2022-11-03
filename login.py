@@ -19,13 +19,6 @@ mydb = mysql.connector.connect(
 
 print(mydb)
 
-mycursor = mydb.cursor()
-
-mycursor.execute("SELECT * FROM db_pharm.tuser")
-myresult = mycursor.fetchall()
-
-for x in myresult:
-  print(x)
 
 class MainWindow(QMainWindow):
       #nel costruttore inserisco  tutto il codice  per gestire la finestra e gli oggetti di caricare dentro
@@ -44,3 +37,40 @@ window.show()
 
 app.exec()       
 #sempre uguale
+
+mycursor = mydb.cursor()
+
+mycursor.execute("SELECT * FROM db_pharm.tboxlog")
+
+myresult = mycursor.fetchall()
+
+for a in myresult:
+  print(a)
+
+
+mycursor = mydb.cursor()
+
+mycursor.execute("SELECT * FROM db_pharm.tbox")
+
+myresult = mycursor.fetchall()
+
+for b in myresult:
+  print(b)
+
+mycursor = mydb.cursor()
+
+mycursor.execute("SELECT * FROM db_pharm.tpharm")
+
+myresult = mycursor.fetchall()
+
+for b in myresult:
+  print(b)
+
+mycursor = mydb.cursor()
+
+mycursor.execute("SELECT * FROM db_pharm.tuser")
+
+myresult = mycursor.fetchall()
+
+for x in myresult:
+  print(x)
