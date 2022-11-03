@@ -4,8 +4,8 @@ document.getElementById('submit').onclick = function (e) {
  
     var error = false;
 
-    if(check('usr')) error = true;
-    if(check('pwd')) error = true;
+    if(login('usr')) error = true;
+    if(login('pwd')) error = true;
 
     if(error) e.preventDefault();
 
