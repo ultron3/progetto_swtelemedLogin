@@ -11,7 +11,7 @@ document.getElementById('submit').onclick = function (e) {
 
 }
 
-function check(id) {
+function login(id) {
 
 if(document.getElementById(id).value == '')
 {
