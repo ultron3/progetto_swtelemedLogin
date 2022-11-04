@@ -4,7 +4,7 @@ from PyQt6.QtWidgets import QApplication, QMainWindow, QPushButton
 #importo la classe generata da compilatore ui py
 #dal file demo1.py importo la classe ui_mainwindow
 #ora posso usare ui_mainwindow
-
+import jwt
 from ui_login import Ui_MainWindow
 #creo la classe mainwindow che eredita le caratteristiche della classe  mainwindow
 #scrivo la classe 
