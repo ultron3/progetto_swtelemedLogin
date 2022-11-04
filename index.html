@@ -6,22 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="/css/style.css">
-    <script src=”login.js” type=”text/javascript”></script>
+    
     <script src=”index.js” type=”text/javascript”></script>
+    <script src=”registrazione.js” type=”text/javascript”></script>
     <title>Login</title>
     
 </head>
 <body>
     <H1>Possibile schermata di login</H1>
-    
-           
-    <form name="Form" onsubmit="login()"></form>
-        <h1>Login</h1>
+<form name="Form" onsubmit="Registrati()">
+    <h1>registrazione</h1>
 
-        <input type="text" id="username" placeholder="Username" name="username">
-        <input type="password" id="password" placeholder="Password" name="password">
-        
-        <button type="submit" name="login">Accedi</button>
-    </form>
+    inserisci username <input type="text" id="username" placeholder="Username" name="username">
+    <br><br>
+    inserisci nome <input type="text" id="nome" placeholder="nome" name="nome">
+    <br><br>
+    inserisci cognome <input type="text" id="cognome" placeholder="cognome" name="cognome">
+    <br><br>
+   
+
+
+   inserisci una password <input type="password" id="password" placeholder="Password" name="password">
+    <br><br>
+    
+    <button type="submit" name="login">registrati</button>
+    <input type="reset" name="invia" value="cancella">
+</form>
+           
+   
 </body>
 </html>
