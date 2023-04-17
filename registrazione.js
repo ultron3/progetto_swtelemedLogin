@@ -1,3 +1,4 @@
+console.log("python jwt")
 function Registrati()
 {
     var username = document.modulo.username.value;
